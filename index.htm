@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pro Nouns Keygenderator</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="window centered" id="window">
+    <div class="title-bar">
+      <div class="title-bar-text">Pro Nouns Keygenderator</div>
+    </div>
+    <div class="window-body">
+      <canvas id="scroller" width="350px" height="120px"></canvas>
+      <br/>
+      <div class="field-row-stacked">
+        <label for="pronouns">Which version of Pro Nouns do you want to use?</label>
+        <input id="pronouns" type="text" placeholder="they/them, she/her, he/him, etc."/>
+      </div>
+      <br/>
+      <div class="field-row">
+        <label for="serial">License Key:</label>
+        <input id="serial" type="text" readonly value="XXXXX-XXXXX-XXXXX"/>
+        <button id="clicky" disabled>Generate Key</button>
+      </div>
+    </div>
+    <div class="status-bar">
+      <p class="status-bar-field">Now Playing: Captain - Space Debris</p>
+      <p class="status-bar-field" id="play">Loading...</p>
+    </div>
+  </div>
+
+  <script type="application/javascript" src="chiptune2.js"></script>
+  <script type="application/javascript" src="script.js"></script>
+  <script type="application/javascript" src="libopenmpt.js" async onload="initModPlayer()"></script>
+</body>
+
+<!-- another silly project by @lunasorcery -->
+<!-- https://twitter.com/lunasorcery -->
+
+<!-- Music: Space Debris by Captain (https://modarchive.org/index.php?request=view_by_moduleid&query=57925) -->
+</html>

@@ -1,0 +1,44 @@
+body {
+	background: #088;
+}
+#window {
+	margin: auto;
+	width: 366px;
+}
+#scroller {
+	width: 350px;
+	height: 120px;
+	margin-bottom: 10px;
+	background: black;
+}
+#clicky {
+	margin-right: 2px;
+	margin-left: auto;
+	width: 120px;
+}
+#serial {
+	text-align: center;
+	color: black;
+	width: 150px;
+	font-family: monospace;
+}
+#play {
+	flex-grow: 0;
+	cursor: pointer;
+	color: #00f;
+	text-decoration: underline;
+}
+input[type="text"][readonly] {
+	background: #ece9d8;
+}
+
+@media only screen and (min-width: 400px) and (min-height: 350px) {
+	/* https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/ */
+	.centered {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		/* bring your own prefixes */
+		transform: translate(-50%, -50%);
+	}
+}
