@@ -27,7 +27,7 @@ function pronounsAreValid(pronouns) {
 
 	var onlyText = "";
 	for (var i = 0; i < pronouns.length; ++i) {
-		if ((pronouns[i] >= 'a' && pronouns <= 'z') || (pronouns[i] >= 'A' && pronouns <= 'Z')) {
+		if ((pronouns[i] >= 'a' && pronouns[i] <= 'z') || (pronouns[i] >= 'A' && pronouns[i] <= 'Z')) {
 			onlyText += pronouns[i];
 		}
 	}
